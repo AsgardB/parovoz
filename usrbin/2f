@@ -1,0 +1,4 @@
+#!/bin/sh
+c='bt twofa'
+[ "$1" ] && $c || $c | xclip -selection clipboard
+

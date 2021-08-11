@@ -1,0 +1,2 @@
+#!/bin/sh
+firejail --noprofile --quiet --caps.drop=all --no3d --nodbus --nodvd --nogroups --nonewprivs --noroot --nosound --notv --nou2f --novideo --seccomp --private --private-dev --private-tmp --protocol=unix,inet --blacklist=${HOME}/.Xauthority --blacklist=/tmp/.X11-unix --whitelist=/mnt/env --whitelist=/mnt/bt --whitelist=/mnt/upload --whitelist=/mnt/lib --whitelist=/mnt/var /mnt/bt/r "$@"

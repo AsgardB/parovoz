@@ -1,0 +1,1 @@
+jchromez="firejail --ignore=disable-mnt --whitelist=/mnt/share/apm --whitelist=/mnt/share/checker"

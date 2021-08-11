@@ -1,0 +1,14 @@
+#!/bin/sh
+. /mnt/env/bin/activate
+export LD_LIBRARY_PATH=/mnt/lib
+export TZ='Europe/Moscow'
+cd /mnt/bt
+if [ "$1" ]; then
+	if [ $1 = u ]; then
+		python saved.py
+	else
+		python command.py "$@"
+	fi
+else
+	python bt.py
+fi

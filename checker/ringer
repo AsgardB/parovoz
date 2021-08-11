@@ -1,0 +1,8 @@
+#!/bin/sh
+while true; do
+	v=$(($v+19000))
+	volume $v
+	cvlc --play-and-exit /mnt/checker/sound.mp3 &
+	echo $$ $! > /dev/shm/alarmpid
+	wait
+done

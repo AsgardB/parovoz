@@ -1,0 +1,4 @@
+#!/bin/sh
+sed -i 's/00:02/72:00/' /home/debian/.xscreensaver
+echo 65 > /mnt/var/kpress
+

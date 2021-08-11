@@ -1,0 +1,8 @@
+sed -i "3calias qs='. /mnt/usrbin/qs'" /root/.bashrc
+sed -i '/size/c\
+size=@Size(1366 707)
+/TerminalMargin/a\
+HideTabBarWithOneTab=true\
+MenuVisible=false
+' /etc/xdg/qterminal.org/qterminal.ini
+sed -i '10a\/root/bin/b; /mnt/apm/listen.py early &' /startup

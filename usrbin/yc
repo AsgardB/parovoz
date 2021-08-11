@@ -1,0 +1,17 @@
+#!/bin/sh
+f=/mnt/uc/${1:-4100110000000000}
+t=/tmp/$(basename $f).1
+
+sed -i '/^\s*$/d' $f
+
+[ $u ] && cat $t | tee -a $f && exit
+
+c=$(head -n 1 $f)
+echo $c | tee $t
+echo $c | cut -d\  -f2 | xclip -selection clipboard
+
+l=$(wc -l $f | cut -d\  -f1)
+echo $l
+[ $l -le 3 ] && xmessage low codes
+
+sed -i '1d' $f

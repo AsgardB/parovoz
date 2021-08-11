@@ -1,0 +1,10 @@
+ln -s /mnt/usrbin/* /usr/bin
+x1
+export TZ='Europe/Moscow'
+
+
+nohup sudo -u debian /mnt/apm/listen.py >/dev/null 2>&1 &
+
+nohup sudo -u debian /mnt/checker/accept.py >/dev/null 2>&1 &
+
+nohup sudo -u debian monitor >/dev/null 2>&1 &

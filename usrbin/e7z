@@ -1,0 +1,4 @@
+#!/bin/sh
+cd ${1:-.}; find -iname '*cache*' -print0 | xargs -0 rm -rf
+7z a -mhe=on -paaaaaa /mnt/upload/$(basename $(pwd)) *
+

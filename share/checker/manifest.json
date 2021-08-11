@@ -1,0 +1,12 @@
+ {
+  "name": "Bitzlato checker",
+  "description": "",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+   {
+     "matches": ["https://*.bitzlato.com/*", "https://*.bitzlato.bz/*"],
+     "js": ["content.js"]
+   }
+ ]
+}

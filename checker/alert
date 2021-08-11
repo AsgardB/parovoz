@@ -1,0 +1,9 @@
+#!/bin/sh
+echo !
+sleep 10
+
+while true; do
+	v=$(($v+19000))
+	volume $v
+	cvlc --play-and-exit /mnt/checker/notify.mp3 >/dev/null 2>&1
+done

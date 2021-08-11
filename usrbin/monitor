@@ -1,0 +1,9 @@
+#!/bin/sh
+chrome https://bitzlato.com/ru/p2p/buy-btc-rub
+volume
+
+while true; do
+
+sleep 1199
+silent 0
+done

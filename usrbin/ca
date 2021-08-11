@@ -1,0 +1,10 @@
+#!/bin/sh
+ret () { pkill -f '^sleep 1199'; }
+ret
+
+sleep 11
+silent 1
+read v
+pkill alert
+volume
+ret

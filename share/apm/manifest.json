@@ -1,0 +1,19 @@
+ {
+  "name": "apm",
+  "description": "",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+   {
+     "matches": ["https://*.yoomoney.ru/*"],
+     "js": ["content.js"]
+   }
+ ],
+ "permissions": [
+    "debugger",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
